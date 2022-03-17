@@ -5,7 +5,7 @@ const port = 2000;
 const app = express()
 
 app.get("/", (req, res) => {
-    res.status('200').sendFile(path.join(__dirname, "pages,", "dino.html"))
+    res.status('200').sendFile(path.join(__dirname, "dino.html"))
 })
 
 app.listen(port)
