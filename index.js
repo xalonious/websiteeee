@@ -8,6 +8,11 @@ app.get("/", (req, res) => {
     res.status('200').sendFile(path.join(__dirname, "index.html"))
 })
 
+app.get("/dino", (req, res) => {
+res.status('200').sendFile(path.join(__dirname, "dino.html"))
+})
+
+
 app.listen(port)
 
 console.log(`Listening at port ${port}`)
